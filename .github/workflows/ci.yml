@@ -1,0 +1,10 @@
+﻿name: tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container: qgis/qgis:release-3_34
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip3 install pytest --break-system-packages || pip3 install pytest
+      - run: QT_QPA_PLATFORM=offscreen python3 -m pytest -q tests

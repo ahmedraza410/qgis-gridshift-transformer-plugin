@@ -1,0 +1,13 @@
+[general]
+name=Grid Shift Transformer
+qgisMinimumVersion=3.28
+description=Apply an explicit PROJ pipeline with grid shifts to vector layers, with validation.
+version=0.1.0
+author=Ahmed Raza
+email=ahmedd.raza07@gmail.com
+about=Applies an explicit PROJ pipeline (hgridshift/vgridshift) to a vector layer, validates that the required grids are available and that the grid is really used (no ballpark fallback), and reports control-point residuals. Sample project.
+tracker=
+repository=
+tags=crs,transformation,proj,grid,geodesy
+experimental=True
+deprecated=False
